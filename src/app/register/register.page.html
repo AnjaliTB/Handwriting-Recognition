@@ -1,13 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-     Login to Ionic
-    </ion-title>
+    <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-title>LoGIN</ion-title>
+  <ion-title>ReGister</ion-title>
     <ion-list>
       <ion-item>
         <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
@@ -25,14 +23,5 @@
         <ion-button full color="light" (click)="goRegister()">Register</ion-button>
       </ion-item> 
     </ion-list>
-    <mbsc-form [options]="formSettings">
-      <mbsc-form-group>
-          <mbsc-form-group-title>Alerts</mbsc-form-group-title>
-          <div class="mbsc-btn-group-block">
-              <mbsc-button (click)="showAlert()">Alert</mbsc-button>
-              <mbsc-button (click)="showConfirm()">Confirm</mbsc-button>
-              <mbsc-button (click)="showPrompt()">Prompt</mbsc-button>
-          </div>
-      </mbsc-form-group>
-  </mbsc-form>
 </ion-content>
+
