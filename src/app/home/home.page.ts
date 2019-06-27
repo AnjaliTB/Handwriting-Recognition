@@ -15,17 +15,6 @@ export class HomePage {
 constructor(public navCtrl:NavController){
 
 }
-showAlert() {
-  mobiscroll.alert({
-      title: 'Cellular Data is Turned Off for "Safari"',
-      message: 'You can turn on cellular data for this app in Settings.',
-      callback: function () {
-          mobiscroll.toast({
-              message: 'Alert closed'
-          });
-      }
-  });
-}
 login(){
   console.log("Username"+this.username);
   console.log("Password"+this.password);
@@ -36,7 +25,7 @@ login(){
     console.log("Login unsuccessful");
 
 }
-goRegister(){
-  this.navCtrl.navigateForward('./register/register.page.html');
-}
+//goRegister(){
+  //this.navCtrl.navigateForward('./register/register.page.html');
+//}
 }
